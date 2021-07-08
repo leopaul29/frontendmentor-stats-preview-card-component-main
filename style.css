@@ -36,6 +36,8 @@ body {
   max-width: 1440px;
   font-family: "Lexend Deca", sans-serif;
   font-size: 15px;
+  line-height: 27px;
+  letter-spacing: 0.4px;
 }
 
 .card {
@@ -55,18 +57,20 @@ body {
   color: var(--text-main-heading);
   font-family: "Inter", sans-serif;
   font-weight: 700;
+  line-height: 40px;
 }
 .accent {
   color: var(--text-accent);
 }
 .card__text {
   color: var(--text-main-paragraph);
+  padding-bottom: 30px;
 }
 .stats {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  margin-right: 30px;
+  margin-right: 50px;
 }
 .stat {
   display: flex;
@@ -88,10 +92,7 @@ body {
 }
 .card__right {
   border-radius: 5px;
-  background-color: red;
   background-image: url(images/image-header-desktop.jpg);
   width: 500px;
   height: 400px;
-  mix-blend-mode: multiply;
-  fill: red;
 }

@@ -50,14 +50,12 @@ div {
   font-weight: 700;
   line-height: 40px;
   font-size: 32px;
-  padding-bottom: 20px;
 }
 .accent {
   color: var(--text-accent);
 }
 .card__text {
   color: var(--text-main-paragraph);
-  padding-bottom: 50px;
 }
 .stat {
   display: flex;
@@ -78,6 +76,10 @@ div {
   font-size: 12px;
 }
 
+.card {
+  background-color: var(--card-bg-color);
+  border-radius: 5px;
+}
 @media (min-width: 800px) {
   /* mobile ui */
   body {
@@ -95,6 +97,12 @@ div {
     justify-content: space-between;
     padding: 60px 100px 60px 60px;
     max-width: 380px;
+  }
+  .card__title {
+    padding-bottom: 20px;
+  }
+  .card__text {
+    padding-bottom: 50px;
   }
   .card__img {
     border-radius: 5px;
@@ -117,27 +125,30 @@ div {
     background-color: red;
   }
   .card {
-    background-color: var(--card-bg-color);
-    display: flex;
-    flex-direction: column;
-    border-radius: 5px;
+    display: grid;
+    grid-template-rows: 200px auto;
+    max-width: 350px;
     text-align: center;
   }
   .card__info {
+    grid-row: 2;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    padding: 60px 100px 40px 60px;
+    padding: 20px;
     max-width: 380px;
+    margin-top: 10px;
+  }
+  .card__text {
+    padding: 15px;
   }
   .card__img {
+    grid-row: 1;
     border-radius: 5px;
     background-image: url(images/image-header-mobile.jpg);
     background-repeat: no-repeat;
-    min-width: 500px;
-    max-width: 100%;
-    height: 300px;
+    background-size: 100%;
   }
   .stat {
     padding-bottom: 20px;

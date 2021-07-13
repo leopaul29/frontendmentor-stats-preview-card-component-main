@@ -81,9 +81,9 @@ div {
   border-radius: 5px;
 }
 @media (min-width: 800px) {
-  /* mobile ui */
+  /* desktop ui */
   body {
-    background-color: green;
+    /* background-color: green; */
   }
   .card {
     background-color: var(--card-bg-color);
@@ -122,7 +122,7 @@ div {
 @media (max-width: 800px) {
   /* mobile ui */
   body {
-    background-color: red;
+    /* background-color: red; */
   }
   .card {
     display: grid;
